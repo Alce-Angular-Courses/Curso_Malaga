@@ -1,6 +1,8 @@
 <h1>La lista de la compra</h1>
 
-<item *ngFor="let item of items" [item]="item" (remove)="removeItem(item)"></item>
+<item *ngFor="let item of items" 
+    [item]="item" 
+    (remove)="removeItem(item)"></item>
 
 <hr>
 <input #desc type='text'>
