@@ -1,11 +1,12 @@
+
 <form name="myform" novalidate (ngSubmit)="enviar()">
 
   <p>
     <!--Etiqueta / Campo "Mombre"-->						
     <label for="firstname">Nombre</label>
-    <input type="text" id="firstname" name="firstname"
+    <input type="text" id="firstname"name="firstname" 
       [(ngModel)]="user.firstname" 
-      ngModel-options="{ updateOn: 'submit' }"
+      ngModelOptions="{ updateOn: 'submit' }"
       required="true" 
       minlength="2"
       #firstnameState="ngModel">
@@ -46,8 +47,8 @@
   <p>
       <label for="phoneNumber">Teléfono</label>
       <input type="text" id="phoneNumber" name="phoneNumber" 
-      [(ngModel)]="user.phoneNumber" maxlength="9" minlength="9" 
-    
+      [(ngModel)]="user.phoneNumber" 
+      maxlength="9" minlength="9" 
       #phoneNumberState="ngModel"/> 
   </p>						
 

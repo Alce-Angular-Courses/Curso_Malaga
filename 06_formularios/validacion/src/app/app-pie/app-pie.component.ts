@@ -17,7 +17,7 @@ export class AppPieComponent implements OnInit {
     this.sAutor = 'Alejandro L. Cerezo';
     this.sEmpresa = 'Icono TC';
     // this.sLugar = 'Madrid';
-    this.sLugar = 'Málagga';
+    this.sLugar = 'Málaga';
     this.sFecha = '2017';
   }
 

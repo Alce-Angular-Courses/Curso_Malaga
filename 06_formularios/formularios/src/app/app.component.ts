@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Provincia} from './modelo/modelos';
+import {Impresora} from './modelo/modelos';
 
 // Uso de interfaces para definir las propiedades de una clase
 // que se utiliza como modelo de datos
@@ -6,10 +8,6 @@ import { Component } from '@angular/core';
 // Podría llevarse a un fichhero inedpendiente, exportarse
 // y luego importarse en este
 
-interface Provincia {
-  idProvincia: number;
-  nombre: string;
-}
 
 @Component({
   selector: 'app-root',
