@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class LibrosService {
   listaLibros: Array<string>;
-  
+
   constructor() { }
 
   getLibros(libro) {
@@ -11,7 +11,7 @@ export class LibrosService {
       'Angula 4',
       'Todo Angular',
       'Angular para expertos'
-    ]
+    ];
     return (this.listaLibros);
   }
 
