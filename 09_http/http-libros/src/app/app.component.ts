@@ -21,7 +21,7 @@ export class AppComponent {
       response => {
         const data = response.json();
         for (let i = 0; i < data.items.length; i++) {
-          let bookTitle = data.items[i].volumeInfo.title;
+          const bookTitle = data.items[i].volumeInfo.title;
           this.aBooks.push(bookTitle);
         }
       },

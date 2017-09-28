@@ -9,13 +9,13 @@ export class BooksService {
 
   getBooks(title: string) {
 
-    const url = "https://www.googleapis.com/books/v1/volumes?q=intitle:" + title;
+    const url = 'https://www.googleapis.com/books/v1/volumes?q=intitle:' + title;
 
     return this.http.get(url).map(
       response => this.extractTitles(response));
   }
 
   private extractTitles(response: Response) {
-    return response.json().items.map(book => book.volumeInfo.title)
+    return response.json().items.map(book => book.volumeInfo.title);
   }
 }
